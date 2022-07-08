@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Dapper" />
+    <None Remove="Microsoft.Data.Sqlite.Core" />
+    <None Remove="Microsoft.EntityFrameworkCore" />
+    <None Remove="Microsoft.EntityFrameworkCore.Design" />
+    <None Remove="Microsoft.EntityFrameworkCore.Relational" />
+    <None Remove="Microsoft.EntityFrameworkCore.Tools" />
+    <None Remove="Microsoft.Extensions.Configuration.Abstractions" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.123" />
+    <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="6.0.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.6">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="6.0.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.6">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="6.0.0" />
+  </ItemGroup>
+</Project>
