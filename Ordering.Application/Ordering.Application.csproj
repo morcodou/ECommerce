@@ -9,9 +9,28 @@
   <ItemGroup>
     <None Remove="AutoMapper" />
     <None Remove="MediatR" />
+    <None Remove="Response\" />
+    <None Remove="Commands\" />
+    <None Remove="Queries\" />
+    <None Remove="Mappers\" />
+    <None Remove="Handlers\" />
+    <None Remove="Handlers\QueryHandlers\" />
+    <None Remove="Handlers\CommandHandlers\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="11.0.1" />
     <PackageReference Include="MediatR" Version="10.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Responses\" />
+    <Folder Include="Commands\" />
+    <Folder Include="Queries\" />
+    <Folder Include="Mappers\" />
+    <Folder Include="Handlers\" />
+    <Folder Include="Handlers\QueryHandlers\" />
+    <Folder Include="Handlers\CommandHandlers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ordering.Core\Ordering.Core.csproj" />
   </ItemGroup>
 </Project>

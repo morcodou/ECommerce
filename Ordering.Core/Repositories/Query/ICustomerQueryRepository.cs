@@ -1,8 +1,5 @@
 using Ordering.Core.Entities;
 using Ordering.Core.Repositories.Query.Base;
-using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 
 namespace Ordering.Core.Repositories.Query
 {

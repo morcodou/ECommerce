@@ -1,5 +1,3 @@
-using System.Threading.Tasks;
-
 namespace Ordering.Core.Repositories.Command.Base
 {
     public interface ICommandRepository<T> where T : class

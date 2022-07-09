@@ -2,7 +2,7 @@ using Microsoft.Extensions.Configuration;
 using Ordering.Core.Repositories.Query.Base;
 using Ordering.Infrastructure.Data;
 
-namespace Ordering.Infrastructure.Repository.Query.Base
+namespace Ordering.Infrastructure.Repositories.Query.Base
 {
     public class QueryRepository<T> : DbConnector,  IQueryRepository<T> where T : class
     {

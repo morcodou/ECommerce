@@ -1,15 +1,11 @@
+using System.Data;
 using Dapper;
 using Microsoft.Extensions.Configuration;
 using Ordering.Core.Entities;
 using Ordering.Core.Repositories.Query;
-using Ordering.Infrastructure.Repository.Query.Base;
-using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
+using Ordering.Infrastructure.Repositories.Query.Base;
 
-namespace Ordering.Infrastructure.Repository.Query
+namespace Ordering.Infrastructure.Repositories.Query
 {
     public class CustomerQueryRepository : QueryRepository<Customer>, ICustomerQueryRepository
     {

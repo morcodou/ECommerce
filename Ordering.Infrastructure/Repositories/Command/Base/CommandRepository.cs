@@ -1,9 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using Ordering.Core.Repositories.Command.Base;
 using Ordering.Infrastructure.Data;
-using System.Threading.Tasks;
 
-namespace Ordering.Infrastructure.Repository.Command.Base
+namespace Ordering.Infrastructure.Repositories.Command.Base
 {
     public class CommandRepository<T> : ICommandRepository<T> where T : class
     {
@@ -13,6 +12,7 @@ namespace Ordering.Infrastructure.Repository.Command.Base
         {
             _context = context;
         }
+
         public async Task<T> AddAsync(T entity)
         {
             await _context.Set<T>().AddAsync(entity);

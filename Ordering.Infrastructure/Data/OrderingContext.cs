@@ -5,10 +5,11 @@ namespace Ordering.Infrastructure.Data
 {
     public class OrderingContext : DbContext
     {
-        public OrderingContext(DbContextOptions<OrderingContext> options) : base (options)
+        public OrderingContext(DbContextOptions<OrderingContext> options)
+            : base (options)
         {
         }
 
-        public DbSet<Customer> Customers { get; set; }
+        public DbSet<Customer> Customers { get; set; } = default!;
     }
 }

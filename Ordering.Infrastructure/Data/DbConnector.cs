@@ -1,6 +1,6 @@
+using System.Data;
 using Microsoft.Data.Sqlite;
 using Microsoft.Extensions.Configuration;
-using System.Data;
 
 namespace Ordering.Infrastructure.Data
 {
